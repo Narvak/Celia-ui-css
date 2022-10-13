@@ -1,9 +1,9 @@
 # Celia-ui-css
 
-## date de création
+## Date de création
    13/10/2022
 
-## créateur
+## Créateur
    Narvak
 
 ## Contibuteur
