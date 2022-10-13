@@ -1,0 +1,185 @@
+/* root */
+@charset "UTF-8";
+
+/*
+    * name : lib-crypto_css
+    * git hub : https://github.com/narvak/lib-crypto_css
+*/
+:root, #root, .root {
+    --lc-blue: #0d6efd;
+    --lc-indigo: #6610f2;
+    --lc-purple: #6f42c1;
+    --lc-pink: #d63384;
+    --lc-red: #dc3545;
+    --lc-orange: #fd7e14;
+    --lc-yellow: #ffc107;
+    --lc-green: #198754;
+    --lc-teal: #1abc9c;
+    --lc-cyan: #0dcaf0;
+    --lc-white: #fff;
+    --lc-gray: #6c757d;
+    --lc-gray-dark: #343a40;
+    --lc-gray-100: #f8f9fa;
+    --lc-gray-200: #e9ecef;
+    --lc-gray-300: #dee2e6;
+    --lc-gray-400: #ced4da;
+    --lc-gray-500: #adb5bd;
+    --lc-gray-600: #6c757d;
+    --lc-gray-700: #495057;
+    --lc-gray-800: #343a40;
+    --lc-gray-900: #212529;
+    --lc-primary: #1abc9c;
+    --lc-secondary: #2c3e50;
+    --lc-success: #198754;
+    --lc-info: #0dcaf0;
+    --lc-warning: #ffc107;
+    --lc-danger: #dc3545;
+    --lc-light: #f8f9fa;
+    --lc-dark: #212529;
+    --lc-primary-rgb: 26, 188, 156;
+    --lc-secondary-rgb: 44, 62, 80;
+    --lc-success-rgb: 25, 135, 84;
+    --lc-info-rgb: 13, 202, 240;
+    --lc-warning-rgb: 255, 193, 7;
+    --lc-danger-rgb: 220, 53, 69;
+    --lc-light-rgb: 248, 249, 250;
+    --lc-dark-rgb: 33, 37, 41;
+    --lc-white-rgb: 255, 255, 255;
+    --lc-black-rgb: 0, 0, 0;
+    --lc-body-color-rgb: 33, 37, 41;
+    --lc-body-bg-rgb: 255, 255, 255;
+
+    --lc-font-light: "calibri" light sans-serif;
+    --lc-font-regular: "calibri" regular sans-serif;
+    --lc-font-bold: "calibri" bold sans-serif;
+
+    --lc-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --lc-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --lc-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --lc-body-font-family: var(--lc-font-sans-serif);
+    --lc-body-font-size: 1rem;
+    --lc-body-font-weight: 400;
+    --lc-body-line-height: 1.5;
+    --lc-body-color: #212529;
+    --lc-body-bg: #fff;
+
+    --lc-text-color-1: #9a8a7a;
+    --lc-text-color-2: #8a7a6a;
+    --lc-text-color-3: #7a6a5a;
+    --lc-text-color-4: #6a5a4a;
+    --lc-text-color-5: #5a4a3a;
+    --lc-text-color-6: #4a3a2a;
+    --lc-text-color-7: #3a2a1a;
+
+    --lc-bg_color-1: #1a2a3a;
+    --lc-bg_color-2: #2a3a4a;
+    --lc-bg_color-3: #3a4a5a;
+    --lc-bg_color-4: #4a5a6a;
+    --lc-bg_color-5: #5a6a7a;
+    --lc-bg_color-6: #6a7a8a;
+    --lc-bg_color-7: #7a8a9a;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+    font-family: var(--lc-font-regular);
+    text-align : justify;
+}
+
+/* général */
+body, html {
+    background: var(--lc-bg_color-1);
+    color: var(--lc-text-color-1);
+    font-family: var(--lc-font-regular);
+    text-align : justify;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    background-color: white;
+    color: var(--lc-bg_color-1);
+    width: 100%;
+    height: auto;
+    font-family: var(--lc-font-regular);
+    text-align : justify;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* général */
+#header, .header, header {
+    background-color: var(--lc-bg_color-7);
+    color: var(--lc-text-color-1);
+    border: transparent;
+        border-radius: 0 0 15px 15px;
+    margin-bottom: 5px;
+}
+#footer, .footer, footer {
+    background-color: var(--lc-bg_color-7);
+    color: var(--lc-text-color-1);
+    border: transparent;
+        border-radius: 15px 15px 0 0;
+}
+#footer p, .footer p, footer p {
+    background-color: transparent;
+    color: var(--lc-text-color-7);
+    border: transparent;
+        border-radius: 15px 15px 0 0;
+}
+
+/* input */
+#input, .input {
+    background-color: white;
+    color: var(--lc-bg_color-1);
+    width: 100%;
+    height: auto;
+    border: transparent;
+        border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+#input:hover, .input:hover {
+    background-color: rgb(245, 245, 245);
+    color: var(--lc-bg_color-1);
+}
+input {
+    background-color: rgb(215, 215, 215);
+    color: var(--lc-bg_color-1);
+    width: auto;
+    height: auto;
+    border: transparent;
+        border-radius: 15px;
+}
+input:hover {
+    background-color: rgb(200, 200, 200);
+    color: var(--lc-bg_color-1);
+}
+
+/* boxshadow */
+#boxshadow, .boxshadow {
+    box-shadow: 0 0 15px 0 rgb(210, 210, 210);
+}
+#boxshadow:hover, .boxshadow:hover {
+    box-shadow: 0 0 20px 0 rgb(200, 200, 200);
+}
+
+/* border */
+#border, .border {
+    border: transparent;
+        border-radius: 15px;
+}
+
+/* trait vertical */
+#vc, .vc {
+    border-right: 2px solid black;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* div-trois  */
+#div-trois, .div-trois {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+}
